@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-qys9-3kokhap3)v1bsg_d9!)uegr%k1i52%z!v7se%0*c239k0
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 # Application definition
 
@@ -43,11 +43,11 @@ MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
-    'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
+#'django.middleware.csrf.CsrfViewMiddleware',
 
 ROOT_URLCONF = 'todo_list.urls'
 
